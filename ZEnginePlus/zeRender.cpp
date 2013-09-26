@@ -23,19 +23,13 @@ zeRender::zeRender(){
     
 }
 
-void zeRender::draw(zeTile tile){
+
+void zeRender::draw(zeSuperficie superficie){
     
     zombiShader.usarPrograma();
+
     
-   /*glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, tile.textura.texturaId);
-    // Set our "myTextureSampler" sampler to user Texture Unit 0
-    glUniform1i(texturaID, 0);
-    */
-    
-    glUniformMatrix4fv(shdMvp, 1, GL_FALSE, &tile.mvp[0][0]);
-    
-    glBindBuffer(GL_ARRAY_BUFFER, tile.vertexBuffer.vertex_buffer);
+    glBindBuffer(GL_ARRAY_BUFFER, superficie.buffer.vertex_buffer);
     
     glVertexAttribPointer(shdPosicion,
                           POSITION_DATA_SIZE_IN_ELEMENTS,
@@ -69,15 +63,74 @@ void zeRender::draw(zeTile tile){
                           bytes_bloques,
                           (void *)((POSITION_DATA_SIZE_IN_ELEMENTS+COLOR_DATA_SIZE_IN_ELEMENTS) * SIZE_FLOAT_DATA));
     
+    
+    
     glEnableVertexAttribArray(shdTexturaCord);
     
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, tile.vertexBuffer.indices_buffer);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, superficie.buffer.indices_buffer);
     
-    glDrawElements(GL_TRIANGLE_STRIP, tile.vertexBuffer.cantidad_indices, GL_UNSIGNED_SHORT, 0);
+    glDrawElements(GL_TRIANGLE_STRIP, superficie.buffer.cantidad_indices, GL_UNSIGNED_SHORT, 0);
     
     
-
+    
 }
+
+void zeRender::draw(zeVoxel superficie){
+    
+    zombiShader.usarPrograma();
+    
+    
+    glBindBuffer(GL_ARRAY_BUFFER, superficie.buffer.vertex_buffer);
+    
+    glVertexAttribPointer(shdPosicion,
+                          POSITION_DATA_SIZE_IN_ELEMENTS,
+                          GL_FLOAT,
+                          false,
+                          bytes_bloques,
+                          (void *)0);
+    
+    
+    glEnableVertexAttribArray(shdPosicion);
+    
+    
+    /**
+     COLOR**/
+    
+    glVertexAttribPointer(shdColor,
+                          COLOR_DATA_SIZE_IN_ELEMENTS,
+                          GL_FLOAT,
+                          false,
+                          bytes_bloques,
+                          (void *)(POSITION_DATA_SIZE_IN_ELEMENTS * SIZE_FLOAT_DATA));
+    
+    glEnableVertexAttribArray(shdColor);
+    
+    
+    
+    glVertexAttribPointer(shdTexturaCord,
+                          TEXTURA_CORD_DATA_SIZE_IN_ELEMENTS,
+                          GL_FLOAT,
+                          false,
+                          bytes_bloques,
+                          (void *)((POSITION_DATA_SIZE_IN_ELEMENTS+COLOR_DATA_SIZE_IN_ELEMENTS) * SIZE_FLOAT_DATA));
+    
+    
+    
+    glEnableVertexAttribArray(shdTexturaCord);
+    
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, superficie.buffer.indices_buffer);
+    
+    glDrawElements(GL_TRIANGLE_STRIP, superficie.buffer.cantidad_indices, GL_UNSIGNED_SHORT, 0);
+    
+    
+    
+}
+
+
+
+
+
+
 
 
 void zeRender::limpiar(){
@@ -101,7 +154,7 @@ void zeRender::setShader(zeShader shader){
     // shaders
     
     
-    shdMvp         = zombiShader.getUniform("modelViewProjMatrix");
+   // shdMvp         = zombiShader.getUniform("modelViewProjMatrix");
     shdColor       = zombiShader.getParametros("color");        // :@"color"];
     shdTexturaCord = zombiShader.getParametros("textura_cord"); // :@"textura_cord"];
     shdPosicion    = zombiShader.getParametros("position");     // :@"position"];

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B3D435B8-D1CA-4710-90EC-27C1638D4552</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZEnginePlus</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CD6E8361-F803-498A-AFB4-12F551038BEA</key>
+		<string>https://github.com/kobe84/ZEnginePlus.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ZEnginePlus.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CD6E8361-F803-498A-AFB4-12F551038BEA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kobe84/ZEnginePlus.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CD6E8361-F803-498A-AFB4-12F551038BEA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD6E8361-F803-498A-AFB4-12F551038BEA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZEnginePlus</string>
+		</dict>
+	</array>
+</dict>
+</plist>

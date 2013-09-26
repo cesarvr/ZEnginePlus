@@ -110,7 +110,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ZEnginePlus/zeEscena.cpp"
-         timestampString = "401045656.495981"
+         timestampString = "401557385.208273"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "48"
@@ -136,7 +136,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ZEnginePlus/zeEscena.cpp"
-         timestampString = "401045656.495981"
+         timestampString = "401557385.208273"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "50"
@@ -149,7 +149,20 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ZEnginePlus/zeEscena.cpp"
-         timestampString = "401045656.495981"
+         timestampString = "401557385.208273"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "80"
+         endingLineNumber = "80"
+         landmarkName = "zeEscena::update(float delta)"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ZEnginePlus/zeEscena.cpp"
+         timestampString = "401557385.208273"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "81"
@@ -162,7 +175,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ZEnginePlus/zeEscena.cpp"
-         timestampString = "401045656.495981"
+         timestampString = "401557385.208273"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "82"
@@ -175,24 +188,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ZEnginePlus/zeEscena.cpp"
-         timestampString = "401045656.495981"
+         timestampString = "401557385.208273"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "83"
          endingLineNumber = "83"
-         landmarkName = "zeEscena::update(float delta)"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "ZEnginePlus/zeEscena.cpp"
-         timestampString = "401045656.495981"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "84"
-         endingLineNumber = "84"
          landmarkName = "zeEscena::update(float delta)"
          landmarkType = "5">
       </FileBreakpoint>
@@ -214,11 +214,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ZEnginePlus/main.cpp"
-         timestampString = "401153977.615248"
+         timestampString = "401557199.491043"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "80"
-         endingLineNumber = "80"
+         startingLineNumber = "161"
+         endingLineNumber = "161"
          landmarkName = "main(int argc, char **argv)"
          landmarkType = "7">
       </FileBreakpoint>
@@ -227,11 +227,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ZEnginePlus/main.cpp"
-         timestampString = "401153977.615248"
+         timestampString = "401557199.491043"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "112"
-         endingLineNumber = "112"
+         startingLineNumber = "193"
+         endingLineNumber = "193"
          landmarkName = "main(int argc, char **argv)"
          landmarkType = "7">
       </FileBreakpoint>
@@ -240,13 +240,128 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ZEnginePlus/main.cpp"
-         timestampString = "401153977.615248"
+         timestampString = "401557199.491043"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "113"
-         endingLineNumber = "113"
+         startingLineNumber = "194"
+         endingLineNumber = "194"
          landmarkName = "main(int argc, char **argv)"
          landmarkType = "7">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ZEnginePlus/ZEEscenaPrueba1.cpp"
+         timestampString = "401412795.410703"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "380"
+         endingLineNumber = "380"
+         landmarkName = "EscenaUno::render()"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ZEnginePlus/ZEEscenaPrueba1.cpp"
+         timestampString = "401412795.410703"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "363"
+         endingLineNumber = "363"
+         landmarkName = "EscenaUno::render()"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ZEnginePlus/ZEEscenaPrueba1.cpp"
+         timestampString = "401412795.410703"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "400"
+         endingLineNumber = "400"
+         landmarkName = "ObtenerErrorGL()"
+         landmarkType = "7">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ZEnginePlus/ZEEscenaPrueba1.cpp"
+         timestampString = "401412795.410703"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "396"
+         endingLineNumber = "396"
+         landmarkName = "ObtenerErrorGL()"
+         landmarkType = "7">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ZEnginePlus/ZEEscenaPrueba1.cpp"
+         timestampString = "401412795.410703"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "378"
+         endingLineNumber = "378"
+         landmarkName = "EscenaUno::render()"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ZEnginePlus/ZEEscenaPrueba1.cpp"
+         timestampString = "401411521.624016"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "120"
+         endingLineNumber = "120"
+         landmarkName = "EscenaUno::iniciar()"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ZEnginePlus/ZEEscenaPrueba1.cpp"
+         timestampString = "401412795.410703"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "374"
+         endingLineNumber = "374"
+         landmarkName = "EscenaUno::render()"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ZEnginePlus/ZEEscenaPrueba1.cpp"
+         timestampString = "401411869.405119"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "56"
+         endingLineNumber = "56"
+         landmarkName = "EscenaUno::iniciar()"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ZEnginePlus/ZEEscenaPrueba1.cpp"
+         timestampString = "401554091.787942"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "11"
+         endingLineNumber = "11">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

@@ -10,17 +10,14 @@
 #define __ZEnginePlus__zeSkyBox__
 
 #include <iostream>
-#include "zeTile.h"
+#include "zeSuperficieDib.h"
 
-
-class zeSkyBox {
-    const float WIDTH  = 40.0f;
-    const float HEIGHT = 40.0f;
-    const float ZSIZE  = 40.0f;
+class zeSkyBox : public zeSuperficie {
+    
     
 public:
-    zeTile tile;
-    void generarSkyBox(zeTextura text);
+    
+    void generarSkyBox(zeConfiguracion text);
     void setPosicion(float x, float y, float z);
     
 };

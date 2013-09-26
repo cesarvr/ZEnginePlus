@@ -212,6 +212,10 @@ std::string zeShader::loadFicheroShader(std::string nombreFichero){
 
 }
 
+void zeShader::soltarPrograma(){
+
+    glUseProgram(0);
+}
 
 void zeShader::usarPrograma(){
     

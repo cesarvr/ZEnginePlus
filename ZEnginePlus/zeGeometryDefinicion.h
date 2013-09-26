@@ -25,6 +25,17 @@ union _uv_cordenadas{
 typedef union _uv_cordenadas textcoord;
 
 
+struct region_4_lados_t {
+    textcoord izquierda;
+    textcoord arriba;
+    textcoord centro;
+    textcoord abajo;
+    textcoord derecha;
+    textcoord atras;
+};
+
+typedef region_4_lados_t Region4;
+
 
 
 #endif

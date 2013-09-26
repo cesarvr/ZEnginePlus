@@ -11,21 +11,28 @@
 
 #include <iostream>
 #include "zeManager.h"
-#include "zeTerreno.h"
 #include "zeShader.h"
 #include "zeRender.h"
 #include "zeCamara.h"
-#include "zeMapp.h"
 #include "glm.hpp"
 #include "transform.hpp"
 #include "zeSkyBox.h"
+#include "zeMapGenerator.h"
+#include "zeVoxel.h"
+
+
 #include <list>
 
 class zeEscena{
 private:
     const char *FICHERO_CONFIG = "/Users/cesarvr/Desktop/GameErr9E/Proyectos/ZEnginePlus/ZEnginePlus/config_file.cfg";
-
+    zeConfiguracion configuracion;
+    zeMappGenerator voxelMap;
+    
+    
 public:
+    
+    zeEscena();
     
     void iniciar();
     void update(float delta);
@@ -37,7 +44,7 @@ public:
     void lookRight();
     void irDerecha();
     void irIzquierda();
-    
+    void trackCursor(float x, float y);
 };
 
 

@@ -20,30 +20,49 @@
 
 using namespace std;
 
-class zeConfiguracion {
-    
-    
-public:
-    map <string, string> configuracion;
-    string nombreFicheroTextura;
-    string ruta;
-    void leerFicheroConfiguracion(const char *nombreFichero);
-   
-};
+
 
 
 
 class zeTextura {
 protected:
- 
+    
     map<string, string>regiones;
-    unsigned width, height;
+   
 public:
+    unsigned width, height;
     GLuint texturaId;
-    void loadTextura(zeConfiguracion config);
-    textcoord getRegionByNombre(string nombre);
+    void cargarTexturasGL(string pathFicheroImagen);
+   
     
 };
+
+
+class zeConfiguracion {
+private:
+    zeTextura texturaObj;
+    
+    void        guardarArreglo(string line);
+    void        cargarTextura(string pathFicheroTextura);
+    textcoord   convertirATexturaCord(float * uv_coord);
+    void        guardarColeccion(std::string line);
+    
+public:
+    zeConfiguracion(string nombreFicheroConfiguracion);
+    map <string, string> configuracion;
+    string               nombreFicheroTextura;
+    string               ruta;
+    Region4              generarRegion4(std::vector<std::string> listaDeArreglos);
+    
+    void      leerFicheroConfiguracion(const char *nombreFichero);
+    textcoord getRegion2DByNombre(string nombre);
+    Region4   getRegion4ByNombre(string nombre);
+    
+   
+};
+
+
+
 
 
 #endif /* defined(__ZEnginePlus__zeManager__) */

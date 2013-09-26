@@ -41,7 +41,7 @@ public:
     void rotarPosicionCamara(float speed);
     void desplazarIzquierda(float speed);
     void desplazarDerecha(float speed);
-
+    void trackConCursor(float x, float y);
 };
 
 

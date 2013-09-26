@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B51F9E3E17E3C158000C8FE3 /* zeTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B51F9E3C17E3C158000C8FE3 /* zeTile.cpp */; };
-		B51F9E4217E3C79D000C8FE3 /* zeTerreno.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B51F9E4017E3C79D000C8FE3 /* zeTerreno.cpp */; };
+		B516FDA617F38001006FE7EB /* zeSuperficieDib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B516FDA417F38001006FE7EB /* zeSuperficieDib.cpp */; };
 		B528CEDE17E9167900E5B704 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B528CEDD17E9167900E5B704 /* Cocoa.framework */; };
 		B528CEE017E916C300E5B704 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B528CEDF17E916C300E5B704 /* IOKit.framework */; };
 		B52E2AA117E25450002EF201 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B52E2AA017E25450002EF201 /* main.cpp */; };
@@ -19,16 +18,16 @@
 		B52E2ABB17E269D0002EF201 /* zeBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B52E2AB917E269D0002EF201 /* zeBuffer.cpp */; };
 		B52E2ABC17E26EE4002EF201 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52E2AA917E2545C002EF201 /* GLUT.framework */; };
 		B52E2BB717E28D90002EF201 /* zeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B52E2BB517E28D90002EF201 /* zeManager.cpp */; };
-		B53B7C1117EC8572002BD900 /* ZEEscenaPrueba1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B53B7C0F17EC8572002BD900 /* ZEEscenaPrueba1.cpp */; };
 		B53B7C1417EC8F80002BD900 /* perspectiva.fsh in Sources */ = {isa = PBXBuildFile; fileRef = B53B7C1217EC8F80002BD900 /* perspectiva.fsh */; };
 		B53B7C1517EC8F80002BD900 /* perspectiva.vsh in Sources */ = {isa = PBXBuildFile; fileRef = B53B7C1317EC8F80002BD900 /* perspectiva.vsh */; };
 		B54475D417E4CECA00CCC08C /* lodepng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54475D217E4CECA00CCC08C /* lodepng.cpp */; };
 		B545B61217E5E24F0061CFFB /* render_escena.fsh in Sources */ = {isa = PBXBuildFile; fileRef = B545B61017E5E24F0061CFFB /* render_escena.fsh */; };
 		B545B61317E5E24F0061CFFB /* render_escena.vsh in Sources */ = {isa = PBXBuildFile; fileRef = B545B61117E5E24F0061CFFB /* render_escena.vsh */; };
 		B5ACA63817E60570000BE31C /* zeCamara.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5ACA63617E60570000BE31C /* zeCamara.cpp */; };
-		B5ACA63B17E641FA000BE31C /* zeMapp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5ACA63917E641F9000BE31C /* zeMapp.cpp */; };
 		B5DA391917E772CE00097416 /* zeSkyBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5DA391717E772CD00097416 /* zeSkyBox.cpp */; };
 		B5DD12A717E525570039B50F /* zeShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5DD12A517E525570039B50F /* zeShader.cpp */; };
+		B5F1E19317F4B7BE0040F992 /* zeVoxel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F1E19117F4B7BE0040F992 /* zeVoxel.cpp */; };
+		B5F1E19617F4BE310040F992 /* zeMapGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F1E19417F4BE310040F992 /* zeMapGenerator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -269,11 +268,10 @@
 		B514B5D317E8BC4B00AE8D6E /* wrap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = wrap.hpp; sourceTree = "<group>"; };
 		B514B5D417E8BC4B00AE8D6E /* wrap.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wrap.inl; sourceTree = "<group>"; };
 		B514B5D617E8BC4B00AE8D6E /* xstream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = xstream.hpp; sourceTree = "<group>"; };
+		B516FDA417F38001006FE7EB /* zeSuperficieDib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zeSuperficieDib.cpp; sourceTree = "<group>"; };
+		B516FDA517F38001006FE7EB /* zeSuperficieDib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zeSuperficieDib.h; sourceTree = "<group>"; };
+		B516FDA917F466B2006FE7EB /* cubemap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cubemap.png; sourceTree = "<group>"; };
 		B51F9E3B17E380ED000C8FE3 /* config_file.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config_file.cfg; sourceTree = "<group>"; };
-		B51F9E3C17E3C158000C8FE3 /* zeTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zeTile.cpp; sourceTree = "<group>"; };
-		B51F9E3D17E3C158000C8FE3 /* zeTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zeTile.h; sourceTree = "<group>"; };
-		B51F9E4017E3C79D000C8FE3 /* zeTerreno.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zeTerreno.cpp; sourceTree = "<group>"; };
-		B51F9E4117E3C79D000C8FE3 /* zeTerreno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zeTerreno.h; sourceTree = "<group>"; };
 		B528CEDB17E9098500E5B704 /* glfw3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glfw3.h; sourceTree = "<group>"; };
 		B528CEDC17E9098500E5B704 /* glfw3native.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glfw3native.h; sourceTree = "<group>"; };
 		B528CEDD17E9167900E5B704 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -295,22 +293,24 @@
 		B52E2BB617E28D90002EF201 /* zeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zeManager.h; sourceTree = "<group>"; };
 		B52E2BB917E28E60002EF201 /* tiles_configuracion.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tiles_configuracion.json; sourceTree = "<group>"; };
 		B52E2BBA17E28E6A002EF201 /* 2dtextura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2dtextura.png; sourceTree = "<group>"; };
-		B53B7C0F17EC8572002BD900 /* ZEEscenaPrueba1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZEEscenaPrueba1.cpp; sourceTree = "<group>"; };
-		B53B7C1017EC8572002BD900 /* ZEEscenaPrueba1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEEscenaPrueba1.h; sourceTree = "<group>"; };
-		B53B7C1217EC8F80002BD900 /* perspectiva.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = perspectiva.fsh; sourceTree = "<group>"; };
-		B53B7C1317EC8F80002BD900 /* perspectiva.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = perspectiva.vsh; sourceTree = "<group>"; };
+		B53B7C1217EC8F80002BD900 /* perspectiva.fsh */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; path = perspectiva.fsh; sourceTree = "<group>"; };
+		B53B7C1317EC8F80002BD900 /* perspectiva.vsh */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; path = perspectiva.vsh; sourceTree = "<group>"; };
 		B54475D217E4CECA00CCC08C /* lodepng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lodepng.cpp; sourceTree = "<group>"; };
 		B54475D317E4CECA00CCC08C /* lodepng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lodepng.h; sourceTree = "<group>"; };
 		B545B61017E5E24F0061CFFB /* render_escena.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = render_escena.fsh; sourceTree = "<group>"; };
 		B545B61117E5E24F0061CFFB /* render_escena.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = render_escena.vsh; sourceTree = "<group>"; };
 		B5ACA63617E60570000BE31C /* zeCamara.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zeCamara.cpp; sourceTree = "<group>"; };
 		B5ACA63717E60570000BE31C /* zeCamara.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zeCamara.h; sourceTree = "<group>"; };
-		B5ACA63917E641F9000BE31C /* zeMapp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zeMapp.cpp; sourceTree = "<group>"; };
-		B5ACA63A17E641F9000BE31C /* zeMapp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zeMapp.h; sourceTree = "<group>"; };
 		B5DA391717E772CD00097416 /* zeSkyBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zeSkyBox.cpp; sourceTree = "<group>"; };
 		B5DA391817E772CE00097416 /* zeSkyBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zeSkyBox.h; sourceTree = "<group>"; };
 		B5DD12A517E525570039B50F /* zeShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zeShader.cpp; sourceTree = "<group>"; };
 		B5DD12A617E525570039B50F /* zeShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zeShader.h; sourceTree = "<group>"; };
+		B5F1E18E17F4A0A50040F992 /* 41519.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 41519.png; sourceTree = "<group>"; };
+		B5F1E19017F4AA3D0040F992 /* skybox_clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skybox_clouds.png; sourceTree = "<group>"; };
+		B5F1E19117F4B7BE0040F992 /* zeVoxel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zeVoxel.cpp; sourceTree = "<group>"; };
+		B5F1E19217F4B7BE0040F992 /* zeVoxel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zeVoxel.h; sourceTree = "<group>"; };
+		B5F1E19417F4BE310040F992 /* zeMapGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zeMapGenerator.cpp; sourceTree = "<group>"; };
+		B5F1E19517F4BE310040F992 /* zeMapGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zeMapGenerator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -628,7 +628,7 @@
 				B5DD12A417E520160039B50F /* escena */,
 				B54475D117E4CECA00CCC08C /* lodepng */,
 				B52E2BB817E28DE9002EF201 /* fichero */,
-				B52E2AB417E25AD0002EF201 /* tile */,
+				B52E2AB417E25AD0002EF201 /* Geometria */,
 				B52E2AB017E25966002EF201 /* gl */,
 				B52E2AA017E25450002EF201 /* main.cpp */,
 				B52E2AA217E25450002EF201 /* ZEnginePlus.1 */,
@@ -652,22 +652,22 @@
 			name = gl;
 			sourceTree = "<group>";
 		};
-		B52E2AB417E25AD0002EF201 /* tile */ = {
+		B52E2AB417E25AD0002EF201 /* Geometria */ = {
 			isa = PBXGroup;
 			children = (
 				B52E2AB817E25F74002EF201 /* zeGeometryDefinicion.h */,
-				B51F9E3C17E3C158000C8FE3 /* zeTile.cpp */,
-				B51F9E3D17E3C158000C8FE3 /* zeTile.h */,
-				B51F9E4017E3C79D000C8FE3 /* zeTerreno.cpp */,
-				B51F9E4117E3C79D000C8FE3 /* zeTerreno.h */,
 				B5ACA63617E60570000BE31C /* zeCamara.cpp */,
 				B5ACA63717E60570000BE31C /* zeCamara.h */,
-				B5ACA63917E641F9000BE31C /* zeMapp.cpp */,
-				B5ACA63A17E641F9000BE31C /* zeMapp.h */,
 				B5DA391717E772CD00097416 /* zeSkyBox.cpp */,
 				B5DA391817E772CE00097416 /* zeSkyBox.h */,
+				B516FDA417F38001006FE7EB /* zeSuperficieDib.cpp */,
+				B516FDA517F38001006FE7EB /* zeSuperficieDib.h */,
+				B5F1E19117F4B7BE0040F992 /* zeVoxel.cpp */,
+				B5F1E19217F4B7BE0040F992 /* zeVoxel.h */,
+				B5F1E19417F4BE310040F992 /* zeMapGenerator.cpp */,
+				B5F1E19517F4BE310040F992 /* zeMapGenerator.h */,
 			);
-			name = tile;
+			name = Geometria;
 			sourceTree = "<group>";
 		};
 		B52E2ABD17E27137002EF201 /* frameworks */ = {
@@ -690,6 +690,9 @@
 				B51F9E3B17E380ED000C8FE3 /* config_file.cfg */,
 				B52E2BB917E28E60002EF201 /* tiles_configuracion.json */,
 				B52E2BBA17E28E6A002EF201 /* 2dtextura.png */,
+				B516FDA917F466B2006FE7EB /* cubemap.png */,
+				B5F1E18E17F4A0A50040F992 /* 41519.png */,
+				B5F1E19017F4AA3D0040F992 /* skybox_clouds.png */,
 			);
 			name = fichero;
 			sourceTree = "<group>";
@@ -708,8 +711,6 @@
 			children = (
 				B52E2AAD17E2581A002EF201 /* zeEscena.cpp */,
 				B52E2AAE17E2581A002EF201 /* zeEscena.h */,
-				B53B7C0F17EC8572002BD900 /* ZEEscenaPrueba1.cpp */,
-				B53B7C1017EC8572002BD900 /* ZEEscenaPrueba1.h */,
 			);
 			name = escena;
 			sourceTree = "<group>";
@@ -770,18 +771,17 @@
 				B52E2AB317E25978002EF201 /* zeRender.cpp in Sources */,
 				B52E2ABB17E269D0002EF201 /* zeBuffer.cpp in Sources */,
 				B52E2BB717E28D90002EF201 /* zeManager.cpp in Sources */,
-				B51F9E3E17E3C158000C8FE3 /* zeTile.cpp in Sources */,
-				B51F9E4217E3C79D000C8FE3 /* zeTerreno.cpp in Sources */,
 				B54475D417E4CECA00CCC08C /* lodepng.cpp in Sources */,
 				B5DD12A717E525570039B50F /* zeShader.cpp in Sources */,
+				B5F1E19617F4BE310040F992 /* zeMapGenerator.cpp in Sources */,
 				B545B61217E5E24F0061CFFB /* render_escena.fsh in Sources */,
 				B545B61317E5E24F0061CFFB /* render_escena.vsh in Sources */,
+				B5F1E19317F4B7BE0040F992 /* zeVoxel.cpp in Sources */,
 				B5ACA63817E60570000BE31C /* zeCamara.cpp in Sources */,
-				B5ACA63B17E641FA000BE31C /* zeMapp.cpp in Sources */,
 				B5DA391917E772CE00097416 /* zeSkyBox.cpp in Sources */,
-				B53B7C1117EC8572002BD900 /* ZEEscenaPrueba1.cpp in Sources */,
 				B53B7C1417EC8F80002BD900 /* perspectiva.fsh in Sources */,
 				B53B7C1517EC8F80002BD900 /* perspectiva.vsh in Sources */,
+				B516FDA617F38001006FE7EB /* zeSuperficieDib.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

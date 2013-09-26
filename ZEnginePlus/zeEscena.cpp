@@ -8,32 +8,35 @@
 
 #include "zeEscena.h"
 
-zeConfiguracion configuracion;
+
 zeTextura textura;
-zeTerreno terreno;
+
 zeShader shader;
 zeRender dibujador;
-zeCamara camara(glm::vec3(2,5,43),glm::vec3(0,0,0),glm::vec3(0,1,0));
-zeMapp mapp;
+zeCamara camara(glm::vec3(2,5,23),glm::vec3(0,0,0),glm::vec3(0,1,0));
+
 zeSkyBox skyBox;
+
+
+zeEscena::zeEscena():configuracion(FICHERO_CONFIG){
+
+
+}
 
 void zeEscena::iniciar(){
 
     
-    configuracion.leerFicheroConfiguracion(FICHERO_CONFIG);
-    textura.loadTextura(configuracion);
+
     
-     
-    shader.cargarShader("render_escena", configuracion.ruta);
-    
+    shader.cargarShader("render_escena", configuracion.nombreFicheroTextura);
     
     dibujador.setShader(shader);
-    mapp.inicio(textura, camara);
+    //mapp.inicio(textura, camara);
     
-    skyBox.generarSkyBox(textura);
+    skyBox.generarSkyBox(configuracion);
  
-    
-    skyBox.tile.mvp = camara.proyeccion * camara.vista * skyBox.tile.modelo;
+    voxelMap.generarMapa();
+    //skyBox.tile.mvp = camara.proyeccion * camara.vista * skyBox.tile.modelo;
     
 }
 
@@ -41,22 +44,32 @@ void zeEscena::iniciar(){
 
 void zeEscena::render(){
     
-    std::list<zeTerreno>::iterator voxel_it = mapp.lista.begin();
+    //std::list<zeTerreno>::iterator voxel_it = mapp.lista.begin();
     
     dibujador.limpiar();
     
+    
+    /*
     while (voxel_it != mapp.lista.end()) {
        
         dibujador.draw(voxel_it->tile);
         voxel_it++;
+    }*/
+    
+     skyBox.prepararParaDibujar(shader);
+     dibujador.draw(skyBox);
+     
+    
+    voxelMap.drawMap(shader);
+    
+
+    for (zeVoxel &voxel : voxelMap.getVoxelMap()) {
+        dibujador.draw(voxel);
     }
     
-     //dibujador.draw(skyBox.tile);
     
     
-    
-    dibujador.volcarBuffer();
-    
+
     
 }
 
@@ -72,20 +85,25 @@ void zeEscena::update(float delta){
     
     
     
+    //skyBox.tile.mvp = camara.proyeccion * camara.vista * skyBox.tile.modelo;
     
     
-    std::list<zeTerreno>::iterator voxel_it = mapp.lista.begin();
     
     
+    //std::list<zeTerreno>::iterator voxel_it = mapp.lista.begin();
+    
+    /*
     while (voxel_it != mapp.lista.end()) {
        voxel_it->tile.mvp = camara.proyeccion * camara.vista * voxel_it->tile.modelo;
        
      //   voxel_it->tile.modelo = glm::rotate(voxel_it->tile.modelo, 0.1f, glm::vec3(0.0f, 0.3f, 0.0f));
         voxel_it++;
-    }
+    }*/
     
     
-   
+    skyBox.update(camara);
+    
+    voxelMap.update(camara);
     
 }
 
@@ -119,5 +137,11 @@ void zeEscena::irDerecha(){
 
 void zeEscena::irIzquierda(){
     camara.desplazarIzquierda(CAMERASPEED);
+}
+
+void zeEscena::trackCursor(float x, float y){
+    
+    camara.trackConCursor(x, y);
+
 }
 

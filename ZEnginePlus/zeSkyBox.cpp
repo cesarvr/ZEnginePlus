@@ -10,15 +10,15 @@
 
 
 
-void zeSkyBox::generarSkyBox(zeTextura text){
+void zeSkyBox::generarSkyBox(zeConfiguracion text){
 
 
-    tile = zeTile(text);
+    setTamanoZ(40.0f);
+    setAncho(40.0f);
+    setAlto(40.0f);
     
     
-    textcoord coord = text.getRegionByNombre("terreno_top");
-    textcoord face  = text.getRegionByNombre("terreno_face");
-    
+    Region4 cubeMap = text.getRegion4ByNombre("sky_space");
     
 
     float vertx1 = 0 + WIDTH;
@@ -47,35 +47,54 @@ void zeSkyBox::generarSkyBox(zeTextura text){
          */
         
         
-        //top 0-3
-        vertx1, verty1, vertz1, 0.7f, 0.4f, 0.4f, coord.uvx1, coord.uvy1,
-        vertx2, verty1, vertz1, 0.7f, 0.4f, 0.4f, coord.uvx2, coord.uvy1,
-        vertx1, verty1, vertz2, 0.7f, 0.4f, 0.4f, coord.uvx1, coord.uvy2,
-        vertx2, verty1, vertz2, 0.7f, 0.4f, 0.4f, coord.uvx2, coord.uvy2,
+        //top 0,0,1,2,3,3
+        vertx1, verty1, vertz2, 0.7f, 0.7f, 0.4f, cubeMap.arriba.uvx1, cubeMap.arriba.uvy1,
+        vertx2, verty1, vertz2, 0.7f, 0.7f, 0.4f, cubeMap.arriba.uvx2, cubeMap.arriba.uvy1,
+        vertx1, verty1, vertz1, 0.7f, 0.7f, 0.4f, cubeMap.arriba.uvx1, cubeMap.arriba.uvy2,
+        vertx2, verty1, vertz1, 0.7f, 0.7f, 0.4f, cubeMap.arriba.uvx2, cubeMap.arriba.uvy2,
         
         
         //front 4-7
-        vertx1, verty1, vertz1, 0.7f, 0.4f, 0.4f, face.uvx1, face.uvy1,
-        vertx2, verty1, vertz1, 0.7f, 0.4f, 0.4f, face.uvx2, face.uvy1,
-        vertx1, verty2, vertz1, 0.7f, 0.4f, 0.4f, face.uvx1, face.uvy2,
-        vertx2, verty2, vertz1, 0.7f, 0.4f, 0.4f, face.uvx2, face.uvy2,
+        vertx1, verty1, vertz1, 0.7f, 0.4f, 0.4f, cubeMap.centro.uvx1, cubeMap.centro.uvy1,
+        vertx2, verty1, vertz1, 0.7f, 0.4f, 0.4f, cubeMap.centro.uvx2, cubeMap.centro.uvy1,
+        vertx1, verty2, vertz1, 0.7f, 0.4f, 0.4f, cubeMap.centro.uvx1, cubeMap.centro.uvy2,
+        vertx2, verty2, vertz1, 0.7f, 0.4f, 0.4f, cubeMap.centro.uvx2, cubeMap.centro.uvy2,
         
-        //7-11
-        vertx1, verty1, vertz2, 0.7f, 0.4f, 0.4f, face.uvx1, face.uvy1,
-        vertx2, verty1, vertz2, 0.7f, 0.4f, 0.4f, face.uvx2, face.uvy1,
-        vertx1, verty2, vertz2, 0.7f, 0.4f, 0.4f, face.uvx1, face.uvy2,
-        vertx2, verty2, vertz2, 0.7f, 0.4f, 0.4f, face.uvx2, face.uvy2,
+        //Atras 8,8,9,10,11,11
+        vertx1, verty1, vertz2, 0.7f, 0.4f, 0.9f, cubeMap.atras.uvx2, cubeMap.atras.uvy1,
+        vertx2, verty1, vertz2, 0.7f, 0.4f, 0.9f, cubeMap.atras.uvx1, cubeMap.atras.uvy1,
+        vertx1, verty2, vertz2, 0.7f, 0.4f, 0.9f, cubeMap.atras.uvx2, cubeMap.atras.uvy2,
+        vertx2, verty2, vertz2, 0.7f, 0.4f, 0.9f, cubeMap.atras.uvx1, cubeMap.atras.uvy2,
         
-        
+        /*abajo  12, 13,14,15  */
+        vertx1, verty2, vertz2, 0.2f, 0.4f, 0.4f, cubeMap.abajo.uvx1, cubeMap.abajo.uvy1,
+        vertx2, verty2, vertz2, 0.2f, 0.4f, 0.4f, cubeMap.abajo.uvx2, cubeMap.abajo.uvy1,
+        vertx1, verty2, vertz1, 0.2f, 0.4f, 0.4f, cubeMap.abajo.uvx1, cubeMap.abajo.uvy2,
+        vertx2, verty2, vertz1, 0.2f, 0.4f, 0.4f, cubeMap.abajo.uvx2, cubeMap.abajo.uvy2,
+      
+        /*derecha  16,16,17,18,19 */
+        vertx2, verty1, vertz1, 0.2f, 0.4f, 0.1f, cubeMap.derecha.uvx1, cubeMap.derecha.uvy1,
+        vertx2, verty1, vertz2, 0.2f, 0.4f, 0.5f, cubeMap.derecha.uvx2, cubeMap.derecha.uvy1,
+        vertx2, verty2, vertz1, 0.2f, 0.4f, 0.5f, cubeMap.derecha.uvx1, cubeMap.derecha.uvy2,
+        vertx2, verty2, vertz2, 0.2f, 0.4f, 0.1f, cubeMap.derecha.uvx2, cubeMap.derecha.uvy2,
+    
+
+        /*izquierda  20,20,21,22,23,23 */
+        vertx1, verty1, vertz2, 0.9f, 0.2f, 0.1f, cubeMap.izquierda.uvx1, cubeMap.izquierda.uvy1,
+        vertx1, verty1, vertz1, 0.9f, 0.2f, 0.5f, cubeMap.izquierda.uvx2, cubeMap.izquierda.uvy1,
+        vertx1, verty2, vertz2, 0.9f, 0.2f, 0.5f, cubeMap.izquierda.uvx1, cubeMap.izquierda.uvy2,
+        vertx1, verty2, vertz1, 0.9f, 0.2f, 0.1f, cubeMap.izquierda.uvx2, cubeMap.izquierda.uvy2,
+    
         
         
     };
     
+    //0,1,2,3,3,4,4,5,6,7,7,16,16,17,18,19,19,20,20,21,22,23,23,12,12,13,14,15,15, 8,8,9,10,11,11
     
-    short indices[]={0,1,2,3,4,5,6,7,10,11,8,9,9,4,4,6,8,10,10,5,5,7,9,11};
+    short indices[]={0,1,2,3,3,4,4,5,6,7,7,16,16,17,18,19,19,20,20,21,22,23,23,12,12,13,14,15,15, 8,8,9,10,11,11};
     
-    tile.vertexBuffer.crearIndicesBuffer( indices, sizeof( indices )  );
-    tile.vertexBuffer.crearVertexBuffer( vertices, sizeof( vertices ) );
+    buffer.crearIndicesBuffer( indices, sizeof( indices )  );
+    buffer.crearVertexBuffer(  vertices, sizeof( vertices ) );
     
 
 

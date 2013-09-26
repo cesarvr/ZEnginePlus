@@ -10,11 +10,10 @@
 #define __ZEnginePlus__zeRender__
 
 #include <iostream>
-#include "zeTile.h"
 #include "zeShader.h"
 #include "zeImport.h"
-
-
+#include "zeSuperficieDib.h"
+#include "zeVoxel.h"
 
 
 
@@ -27,12 +26,15 @@ protected:
 
 public:
     zeRender();
-    void setShader(zeShader shader);
-    void cargarShader();
-    void draw(zeTile tile);
-    void limpiar();
-    void volcarBuffer();
-    
+    void    setShader       (zeShader shader);
+    void    cargarShader    ();
+
+    void    draw            (zeSuperficie superficie);
+    void    draw            (zeVoxel superficie);
+  
+    void    limpiar         ();
+    void    volcarBuffer    ();
+
 
 };
 

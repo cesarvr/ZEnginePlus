@@ -14,18 +14,25 @@
 #include <sstream>
 #include "zeImport.h"
 
+
 class zeShader {
 protected:
-    GLuint ShaderProgram;
+    GLuint      ShaderProgram;
     std::string loadFicheroShader( std::string nombreFichero );
-    GLuint compilarShader( std::string shader, GLenum tipoShader );
-    bool   linkarPrograma( GLuint prog );
+    GLuint      compilarShader( std::string shader, GLenum tipoShader );
+    bool        linkarPrograma( GLuint prog );
+    
+    
 public:
-    void cargarShader(std::string shader, std::string path);
-    GLuint getUniform(const char *uniformNombre );
-    GLuint getParametros(const char *parametros );
-    void usarPrograma();
-
+    
+    void       cargarShader(std::string shader, std::string path);
+    GLuint     getUniform(const char *uniformNombre );
+    GLuint     getParametros(const char *parametros );
+    void       usarPrograma();
+    void       soltarPrograma();
+    
+    
+    
 };
 
 
